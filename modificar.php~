@@ -35,6 +35,7 @@ elseif($num==6)
 	}
 	 
 function modificarSalon(){
+	echo $_GET["nombre"];
 		 $sql = "UPDATE salon SET \"Nombre\"='".$_GET["nombre"]."' WHERE \"Id_salon\"=".$_GET["id_salon"];
 		 
 		 $db = new dbmanager();
